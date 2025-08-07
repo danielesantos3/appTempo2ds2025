@@ -18,6 +18,27 @@ export default function Home(){
                 >
                     <Text style={styles.textoBtn}>Itanhaém</Text>
                 </TouchableOpacity>
+
+                <TouchableOpacity 
+                 style={styles.btn}
+                    onPress={()=>navigation.navigate('Gramado' as never)}
+                >
+                    <Text style={styles.textoBtn}>Gramado</Text>
+                </TouchableOpacity>
+
+                  <TouchableOpacity 
+                 style={styles.btn}
+                    onPress={()=>navigation.navigate('Santos' as never)}
+                >
+                    <Text style={styles.textoBtn}>Santos</Text>
+                </TouchableOpacity>
+
+                 <TouchableOpacity 
+                 style={styles.btn}
+                    onPress={()=>navigation.navigate('Peruibe' as never)}
+                >
+                    <Text style={styles.textoBtn}>Peruibe</Text>
+                </TouchableOpacity>
         </View>
     );
 } 
@@ -32,6 +53,7 @@ const styles = StyleSheet.create({
         fontSize:30
     },
     btn:{
+
        backgroundColor:"#5599AA",
        width:'80%',
        padding:10,
